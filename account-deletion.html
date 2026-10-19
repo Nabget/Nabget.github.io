@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suppression de compte — Passion Chasse</title>
+<style>
+  :root {
+    --bg: #FBFAF7;
+    --surface: #FFFFFF;
+    --border: #E7E4DC;
+    --text: #1C1B18;
+    --text-muted: #6F6B60;
+    --accent: #2F5233;
+    --accent-soft: #E7EEE4;
+    --danger: #B3413A;
+    --danger-soft: #F7E9E7;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141710; --surface: #1C2017; --border: #2B3023;
+      --text: #ECEAE2; --text-muted: #A3A096; --accent: #7FB37A;
+      --accent-soft: #233226; --danger: #E08277; --danger-soft: #2E1F1C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141710; --surface: #1C2017; --border: #2B3023;
+    --text: #ECEAE2; --text-muted: #A3A096; --accent: #7FB37A;
+    --accent-soft: #233226; --danger: #E08277; --danger-soft: #2E1F1C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 0 20px 72px;
+  }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+  h1, h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; color: var(--text); text-wrap: balance; }
+  a { color: var(--accent); }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .masthead {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 14px; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  .brand svg { width: 20px; height: 20px; flex: none; }
+  h1.title { margin: 10px 0 6px; font-size: clamp(26px, 5vw, 36px); line-height: 1.15; }
+  .meta { font-size: 13.5px; color: var(--text-muted); }
+
+  section { padding: 28px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 { font-size: 19px; margin: 0 0 14px; }
+  p, li { max-width: 62ch; }
+  p + p { margin-top: 10px; }
+
+  .step-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .step-list li { display: flex; gap: 14px; align-items: flex-start; }
+  .step-num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px; margin-top: 1px;
+  }
+  .step-body strong { display: block; margin-bottom: 2px; }
+
+  .warning {
+    background: var(--danger-soft);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--text);
+    margin-top: 16px;
+  }
+  .warning strong { color: var(--danger); }
+
+  ul.plain { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  ul.plain li { position: relative; padding-left: 18px; }
+  ul.plain li::before {
+    content: ''; position: absolute; left: 0; top: 0.65em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--accent); opacity: 0.55;
+  }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 420px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  thead th { font-family: 'Fraunces', serif; font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-muted); border-bottom: 2px solid var(--border); }
+  tbody tr:last-child td { border-bottom: none; }
+
+  footer.page-footer {
+    margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--border);
+    font-size: 13.5px; color: var(--text-muted);
+  }
+  footer.page-footer a { color: var(--text-muted); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+      Passion Chasse
+    </div>
+    <h1 class="title">Suppression de compte et des données</h1>
+    <div class="meta">Application éditée par Pierre Ribière — dernière mise à jour le 20/10/2026</div>
+  </header>
+
+  <section>
+    <h2>Option 1 — Depuis l'application (immédiat)</h2>
+    <ol class="step-list">
+      <li><span class="step-num">1</span><span class="step-body"><strong>Ouvrez Passion Chasse</strong>, connectez-vous à votre compte.</span></li>
+      <li><span class="step-num">2</span><span class="step-body"><strong>Allez dans Réglages</strong> (depuis l'onglet Profil).</span></li>
+      <li><span class="step-num">3</span><span class="step-body"><strong>Appuyez sur « Supprimer mon compte »</strong>, puis confirmez.</span></li>
+    </ol>
+    <div class="warning"><strong>Suppression immédiate, définitive et irréversible.</strong> Aucun délai, aucune confirmation par e-mail nécessaire.</div>
+  </section>
+
+  <section>
+    <h2>Option 2 — Sans accès à l'application</h2>
+    <p>Si vous ne pouvez plus vous connecter (appareil perdu, accès impossible), envoyez un e-mail à <a href="mailto:stayoutapplication@gmail.com">stayoutapplication@gmail.com</a> depuis l'adresse associée à votre compte, avec pour objet « Suppression de compte », en indiquant votre pseudo dans l'application.</p>
+    <p>Votre demande est traitée sous un délai d'un mois, pouvant être prolongé de deux mois pour les demandes complexes ; vous en seriez alors informé. Un justificatif d'identité peut être demandé en cas de doute raisonnable sur l'identité du demandeur.</p>
+  </section>
+
+  <section>
+    <h2>Ce qui est supprimé</h2>
+    <ul class="plain">
+      <li>Votre profil (pseudo, nom affiché, biographie, photo de profil, département)</li>
+      <li>Vos publications et leurs photos</li>
+      <li>Votre carnet de chasse et vos localisations (sorties, prélèvements, postes)</li>
+      <li>Vos commentaires, likes, abonnements et comptes bloqués</li>
+      <li>Vos notifications et vos jetons de notification push</li>
+      <li>Vos signalements et groupes de chasse (ou votre place dans ceux-ci)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ce qui est conservé, et combien de temps</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Donnée</th><th>Durée</th></tr></thead>
+        <tbody>
+          <tr><td>Données d'identification techniques (dont adresse IP), lorsque la loi impose leur conservation</td><td>1 an (durée légale applicable aux hébergeurs)</td></tr>
+          <tr><td>Sauvegardes techniques de la base de données</td><td>7 jours, puis effacement définitif</td></tr>
+          <tr><td>Signalements et décisions de modération déjà clôturés</td><td>1 an après leur clôture ; ne permettent plus d'identifier le compte supprimé</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Passé ces délais, toutes les données sont définitivement effacées. Détails complets dans la <a href="https://nabget.github.io/privacy-policy-standalone.html">politique de confidentialité</a>.</p>
+  </section>
+
+  <section>
+    <h2>Supprimer certaines données sans supprimer votre compte</h2>
+    <p>Depuis l'application, sans fermer votre compte, vous pouvez à tout moment :</p>
+    <ul class="plain">
+      <li>Supprimer une publication (la sortie reste dans votre carnet) ou un commentaire</li>
+      <li>Retirer un « j'aime »</li>
+      <li>Supprimer une sortie de votre carnet, ou un poste et son historique</li>
+      <li>Quitter un groupe de chasse</li>
+      <li>Débloquer un compte précédemment bloqué</li>
+      <li>Masquer votre département ou rendre votre carnet privé, dans Modifier le profil</li>
+    </ul>
+  </section>
+
+  <footer class="page-footer">
+    Passion Chasse — application mobile pour chasseurs. Pour toute question : <a href="mailto:stayoutapplication@gmail.com">stayoutapplication@gmail.com</a>.
+  </footer>
+</div>
+</body>
+</html>
