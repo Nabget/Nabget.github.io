@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normes de sécurité des enfants — Passion Chasse</title>
+<style>
+  :root {
+    --bg: #FBFAF7; --surface: #FFFFFF; --border: #E7E4DC;
+    --text: #1C1B18; --text-muted: #6F6B60; --accent: #2F5233; --accent-soft: #E7EEE4;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141710; --surface: #1C2017; --border: #2B3023;
+      --text: #ECEAE2; --text-muted: #A3A096; --accent: #7FB37A; --accent-soft: #233226;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141710; --surface: #1C2017; --border: #2B3023;
+    --text: #ECEAE2; --text-muted: #A3A096; --accent: #7FB37A; --accent-soft: #233226;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px; line-height: 1.65; padding: 0 20px 72px;
+  }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+  h1, h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; color: var(--text); text-wrap: balance; }
+  a { color: var(--accent); }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .masthead { padding: 56px 0 28px; border-bottom: 1px solid var(--border); }
+  .brand {
+    display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent);
+  }
+  .brand svg { width: 20px; height: 20px; flex: none; }
+  h1.title { margin: 10px 0 6px; font-size: clamp(24px, 5vw, 34px); line-height: 1.2; }
+  .meta { font-size: 13.5px; color: var(--text-muted); }
+  section { padding: 26px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 { font-size: 19px; margin: 0 0 12px; }
+  p, li { max-width: 62ch; }
+  p + p { margin-top: 10px; }
+  ul.plain { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  ul.plain li { position: relative; padding-left: 18px; }
+  ul.plain li::before {
+    content: ''; position: absolute; left: 0; top: 0.65em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--accent); opacity: 0.55;
+  }
+  .contact-card {
+    background: var(--accent-soft); border-radius: 10px; padding: 16px 18px; margin-top: 12px;
+  }
+  .contact-card a { font-weight: 600; }
+  footer.page-footer {
+    margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--border);
+    font-size: 13.5px; color: var(--text-muted);
+  }
+  footer.page-footer a { color: var(--text-muted); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+      Passion Chasse
+    </div>
+    <h1 class="title">Normes de sécurité des enfants</h1>
+    <div class="meta">Application éditée par Pierre Ribière — dernière mise à jour le 21/10/2026</div>
+  </header>
+
+  <section>
+    <h2>Notre engagement</h2>
+    <p>Passion Chasse applique une <strong>tolérance zéro</strong> envers toute forme d'exploitation ou d'abus sexuel sur mineur (« CSAE »), toute image ou contenu de cette nature, et tout comportement de sollicitation visant un mineur, sous quelque forme que ce soit sur l'application.</p>
+  </section>
+
+  <section>
+    <h2>Âge minimum</h2>
+    <p>L'application est réservée aux personnes âgées d'au moins <strong>15 ans</strong>. Une case à cocher dédiée fait certifier cet âge à l'inscription, en plus de l'acceptation des conditions générales d'utilisation. Tout compte dont nous apprenons qu'il a été créé par une personne n'ayant pas l'âge requis est supprimé.</p>
+  </section>
+
+  <section>
+    <h2>Signaler un contenu ou un compte</h2>
+    <p>Dans l'application, chaque publication, commentaire et profil dispose d'un bouton « Signaler », accessible sans condition particulière. En dehors de l'application, ou pour tout signalement urgent lié à l'exploitation ou aux abus sexuels sur mineur, contactez-nous directement :</p>
+    <div class="contact-card">
+      <a href="mailto:stayoutapplication@gmail.com">stayoutapplication@gmail.com</a>
+      <p style="margin-top:6px; font-size:14px;">Objet suggéré : « Signalement — sécurité des enfants ». Merci de préciser, si possible, le pseudo concerné, le lien de partage du contenu, et une description des faits.</p>
+    </div>
+    <p>Pour un contenu relevant du droit pénal français, un signalement peut aussi être fait directement auprès des autorités, via la plateforme <a href="https://www.internet-signalement.gouv.fr" target="_blank" rel="noopener">PHAROS (internet-signalement.gouv.fr)</a>.</p>
+  </section>
+
+  <section>
+    <h2>Traitement des signalements</h2>
+    <ul class="plain">
+      <li>Tout signalement est examiné par l'éditeur de l'application.</li>
+      <li>Un contenu identifié comme relevant de l'exploitation ou des abus sexuels sur mineur est <strong>retiré immédiatement</strong>.</li>
+      <li>Le compte à l'origine du contenu est <strong>suspendu ou supprimé</strong> sans délai.</li>
+      <li>Lorsque la loi l'impose, les faits sont <strong>signalés aux autorités compétentes</strong> (plateforme PHAROS, forces de l'ordre).</li>
+      <li>Nous coopérons avec toute réquisition judiciaire ou demande légale des autorités dans ce cadre.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mesures techniques et organisationnelles</h2>
+    <p>Le blocage entre utilisateurs, la suppression de compte et de contenu, et la modération reposent sur des règles appliquées directement au niveau de la base de données de l'application (et non seulement dans son interface), décrites dans la <a href="https://nabget.github.io/privacy-policy-standalone.html">politique de confidentialité</a>.</p>
+  </section>
+
+  <section>
+    <h2>Nous contacter</h2>
+    <p>Pour toute question relative à ces normes, ou pour tout signalement : <a href="mailto:stayoutapplication@gmail.com">stayoutapplication@gmail.com</a>. Les signalements liés à la sécurité des enfants sont traités en priorité.</p>
+  </section>
+
+  <footer class="page-footer">
+    Passion Chasse — application mobile pour chasseurs, éditée par Pierre Ribière.
+  </footer>
+</div>
+</body>
+</html>
